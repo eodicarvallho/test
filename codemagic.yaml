@@ -100,8 +100,8 @@ workflows:
           # KEYSTORE_PASSWORD <-- Put your keystore password here
           # KEY_ALIAS_PASSWORD <-- Put your keystore alias password here
           # KEY_ALIAS <-- Put your keystore alias username here
-        - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS - Put your google-services.json here)
-        - other
+        #- google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS - Put your google-services.json here)
+        #- other
       vars:
         KEYSTORE_PATH: '/tmp/keystore.keystore'
       xcode: 12.4
@@ -150,7 +150,7 @@ workflows:
           notify:
             success: true               # To receive a notification when a build succeeds
             failure: false              # To not receive a notification when a build fails
-        google_play:
-          # See the following link for information regarding publishing to Google Play - https://docs.codemagic.io/publishing-yaml/distribution/#google-play
-          credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-          track: alpha   
+        #google_play:
+        #  # See the following link for information regarding publishing to Google Play - https://docs.codemagic.io/publishing-yaml/distribution/#google-play
+        #  credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        #  track: alpha   
