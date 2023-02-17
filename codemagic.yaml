@@ -14,8 +14,8 @@ workflows:
         XCODE_SCHEME: "Emwork" # <-- Put the name of your scheme here.       
         BUNDLE_ID: "com.emworkapp" # <-- Put your Bundle Id here.
       xcode: latest
-      node: v16.11.1
-      npm: 6
+      node: latest
+      npm: latest
     cache:
       cache_paths:
         - $CM_BUILD_DIR/node_modules
@@ -104,9 +104,9 @@ workflows:
         #- other
       vars:
         KEYSTORE_PATH: '/tmp/keystore.keystore'
-      xcode: 14.2
-      node: 12
-      npm: 6        
+      xcode: latest
+      node: latest
+      npm: latest
     cache:
       cache_paths:
         - $CM_BUILD_DIR/node_modules
