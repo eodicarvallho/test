@@ -107,6 +107,7 @@ workflows:
       xcode: latest
       node: latest
       npm: latest
+      java: 11.0.17
     cache:
       cache_paths:
         - $CM_BUILD_DIR/node_modules
